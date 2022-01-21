@@ -8,7 +8,7 @@ import time
 
 
 def get_score_and_notify():
-    url = "https://www.espncricinfo.com/series/zimbabwe-in-sri-lanka-2021-22-1294726/sri-lanka-vs-zimbabwe-2nd-odi-1294970/live-cricket-score"
+    url = "https://www.espncricinfo.com/series/india-in-south-africa-2021-22-1277060/south-africa-vs-india-2nd-odi-1277083/live-cricket-score"
     response  = requests.get(url)
     soup = BeautifulSoup(response.content, "lxml")
     score_parent = soup.find('div', attrs = {'class':'match-info match-info-MATCH match-info-MATCH-full-width'})
