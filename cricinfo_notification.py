@@ -41,7 +41,7 @@ def get_score_and_notify():
         display_text += scores_string
 
 
-    cmd = f'/usr/bin/notify-send "Cricket Score" "{display_text}"'
+    cmd = f'notify-send "Cricket Score" "{display_text}"'
     os.system(cmd)
 
 
